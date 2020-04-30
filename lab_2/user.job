@@ -1,2 +1,2 @@
 
-find ~ -name "*.txt" -exec grep -oEi "([a-z\d]+(_|\.)?)+@([a-z\d]+([_]|[.])?)+\.[a-z]+" {} \; | tr A-Z a-z | sort -u > base.txt
+find ~ -name "*.txt" -exec grep -oEi "([a-z\d]+(_|\.)?)+@([a-z\d]+([-]|[.])?)+\.[a-z]+" {} \; | tr A-Z a-z | sort -u > base.txt
